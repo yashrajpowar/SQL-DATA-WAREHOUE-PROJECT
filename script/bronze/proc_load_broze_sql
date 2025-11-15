@@ -47,7 +47,7 @@ BEGIN
 
 		--#############2
 		SET @start_time = GETDATE();
-		TRUNCATE TABLE Bronze.crm_cust_info;
+		TRUNCATE TABLE Bronze.crm_prd_info;
 		BULK INSERT Bronze.crm_prd_info
 		from 'E:\s work\SQL\project material\data warehouse projects\sql-data-warehouse-project\datasets\source_crm\prd_info.csv'
 		with (
